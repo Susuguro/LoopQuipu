@@ -5,7 +5,7 @@
 <sup>2</sup>College of Computer Science and Technology, Zhejiang University  
 <sup>*</sup>Corresponding author (`shijianli@zju.edu.cn`; `humor@zju.edu.cn`)
 
-[[Paper (PDF)]](./LoopQuipu.pdf)
+[[Paper (PDF)]](./LoopQuipu.pdf) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24554123.svg)](https://doi.org/10.5281/zenodo.24554123)
 
 <p align="center">
   <img src="./assets/loopquipu_principle.png" alt="LoopQuipu overview diagram" width="100%">
@@ -29,6 +29,7 @@ Looped language models gain effective depth by iterating a compact set of shared
   title  = {LoopQuipu: Load-Aware Scheduling for Batched Decoding of Looped Language Models},
   author = {Xiao, Muhan and Li, Shijian},
   year   = {2026},
+  doi    = {10.5281/zenodo.24554123},
   url    = {https://github.com/Susuguro/LoopQuipu}
 }
 ```
