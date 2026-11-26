@@ -1,0 +1,25 @@
+{
+  "title": "LoopQuipu: Load-Aware Scheduling for Batched Decoding of Looped Language Models",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "publication_date": "2026-11-24",
+  "access_right": "open",
+  "license": "CC-BY-4.0",
+  "creators": [
+    {
+      "name": "Xiao, Muhan",
+      "affiliation": "College of Artificial Intelligence, Zhejiang University"
+    },
+    {
+      "name": "Li, Shijian",
+      "affiliation": "College of Computer Science and Technology, Zhejiang University"
+    }
+  ],
+  "keywords": [
+    "Looped Language Models",
+    "LLM Serving",
+    "Batch Scheduling",
+    "Speculative Decoding"
+  ],
+  "description": "Looped language models gain effective depth by iterating a compact set of shared weights across loops while maintaining private KV caches per request and loop. As batch size and context length change, the decoding bottleneck shifts from shared weight reads to private cache traffic, leaving no fixed speculative loop schedule optimal across low and high loads. We introduce LoopQuipu, an exact batched decoder that aligns each draft block at a confidence threshold, mixes requests across loops in one forward pass, and selects loop spread from a single normalized cache load. Over 117 configurations across three four-loop models, LoopQuipu delivers a 1.94× geometric-mean speedup over autoregressive decoding and reaches 99.3% of the per-configuration measured candidate oracle. At batch sizes of 32 and above, LoopQuipu outperforms the fastest speculative baseline by 8–13% in geometric mean per model. Under continuous Poisson arrivals, LoopQuipu expands serving capacity by 1.18–1.74× while remaining exact in exact arithmetic and matching FP32 autoregressive decoding token for token."
+}
